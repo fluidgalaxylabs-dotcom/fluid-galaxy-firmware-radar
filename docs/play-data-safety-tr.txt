@@ -1,0 +1,21 @@
+Play Console Veri Güvenliği için kontrol özeti
+
+Hesap gerekliliği: Hayır
+Uygulama içi hesap oluşturma: Hayır
+Reklam SDKları: Hayır
+Analitik/Crash SDKları: Hayır
+
+Kullanıcıdan veya cihazdan işlenen bilgiler:
+- Samsung model kodu: cihaz özellikleri için kullanılan tercihler/veriler
+- CSC bölgesi: cihaz özellikleri için kullanılan tercihler/veriler
+- Uygulama tercihleri ve favoriler: tercihler olarak cihazda saklanır
+- Tarama geçmişi ve firmware kayıtları: cihazda saklanır
+
+Ağ üzerinden aktarılan bilgiler:
+- Model kodu ve CSC, Samsung FOTA sunucularına firmware sorgusu amacıyla gönderilir
+- Yapılandırılmış sürüm/test sağlayıcıları kullanılabilir
+- Android ağ protokolleri normal olarak IP adresini ve HTTP teknik başlıklarını sunuculara aktarabilir
+
+Veri şifreleme: Ağ bağlantıları HTTPS üzerinden yapılır. Yerel cihaz verileri uygulama tarafından Android depolama mekanizmalarında tutulur.
+Veri silme: Uygulama verileri uygulama ayarları üzerinden temizlenebilir veya uygulama kaldırıldığında cihaz verileri kaldırılabilir.
+Kullanıcı verileri üçüncü taraf reklam veya analitiklere satılmaz ve paylaşılmaz.

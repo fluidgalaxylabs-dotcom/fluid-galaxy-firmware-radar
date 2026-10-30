@@ -1,0 +1,25 @@
+Uygulama adı (en fazla 30 karakter):
+Fluid Galaxy Radar
+
+Kısa açıklama (en fazla 80 karakter):
+Samsung telefonları için resmi ve test firmware sürümlerini kolayca takip edin.
+
+Tam açıklama:
+Fluid Galaxy Radar; Samsung Galaxy telefonları için seçilen model ve CSC bölgesiyle resmi ve test firmware kayıtlarını takip etmeye yardımcı olan bir uygulamadır.
+
+Ana özellikler:
+- Resmi Samsung firmware sorgulaması
+- Ayrı olarak işaretlenen test firmware kayıtları
+- Favori cihaz kodları ve arama geçmişi
+- Seçilen cihaz için Android ve One UI sürüm bilgileri
+- Yeni firmware için bildirimler
+- İsteğe bağlı arka plan kontrolleri
+- Türkiye dahil çoklu dil desteği
+
+Uygulama seçilen Samsung model kodu ve CSC bölgesiyle ağ üzerinden sorgu yapar. Tarama sonuçları cihazda saklanır. Canlı firmware yanıtları ve kaynak erişimi zaman içinde değişebilir; uygulama sonuçları resmi dağıtım veya cihazın güncellenmeye uygun olduğu anlamına gelmez.
+
+İletişim:
+fluidgalaxylabs@gmail.com
+
+Gizlilik politikası:
+https://fluidgalaxylabs-dotcom.github.io/fluid-galaxy-firmware-radar/privacy-policy.html
