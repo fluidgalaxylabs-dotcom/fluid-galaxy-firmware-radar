@@ -1,52 +1,44 @@
-<!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fluid Galaxy Radar Gizlilik Politikası</title>
-  <style>
-    body { max-width: 760px; margin: 40px auto; padding: 0 20px; font-family: Arial, sans-serif; line-height: 1.55; color: #1f2937; }
-    h1, h2 { line-height: 1.25; }
-    a { color: #0756b8; }
-  </style>
-</head>
-<body>
-  <h1>Fluid Galaxy Radar Gizlilik Politikası</h1>
-  <p><strong>Yürürlük tarihi:</strong> 30 Ekim 2026</p>
+Fluid Galaxy Radar Gizlilik Politikası
+Yürürlük tarihi: 4 Kasım 2026
 
-  <h2>1. Genel</h2>
-  <p>Fluid Galaxy Radar, Samsung cihazları için model koduna göre resmi ve test firmware bilgilerini görüntüleyen bir uygulamadır. Bu politika, uygulamanın veri işleme uygulamalarını açıklar.</p>
+1. Genel
+Fluid Galaxy Radar, Samsung cihazları için model koduna göre resmi ve test firmware bilgilerini görüntüleyen bir uygulamadır. Bu politika, uygulamanın veri işleme uygulamalarını açıklar.
 
-  <h2>2. İşlenen bilgiler</h2>
-  <p>Uygulama hesap oluşturma veya giriş işlemi gerektirmez. Seçtiğiniz Samsung cihaz model kodu, CSC bölgesi, favori cihazlarınız, tarama geçmişi, bildirim tercihleri ve arka plan kontrol ayarları uygulama tarafından cihazınızda saklanabilir.</p>
-  <p>Firmware sorgulaması yapmak için seçtiğiniz model kodu ve CSC bilgileri Samsung FOTA sunucularına gönderilir. Android sürümü, One UI sürümü veya Wear OS sürümü ile ilgili kimi çevrim içi sürüm bilgileri ayrıca sürüm metadatası sağlayıcısından alınabilir.</p>
-  <p>Android sistemi, ağ sunucularına IP adresi ve uygulamanın gönderdiği teknik HTTP başlıklarını normal olarak aktarabilir.</p>
+2. İşlenen bilgiler
+Uygulama hesap oluşturma veya giriş işlemi gerektirmez. Seçtiğiniz Samsung cihaz model kodu, CSC bölgesi, favorileriniz, tarama geçmişiniz, firmware kayıtlarınız, bildirim tercihleriniz ve arka plan kontrol ayarlarınız uygulama verisi olarak cihazınızda saklanır.
 
-  <h2>3. Bilgi kullanımı</h2>
-  <ul>
-    <li>Seçilen Samsung model ve CSC için firmware sorgulamak.</li>
-    <li>Sonuçları cihazda tarama geçmişi ve mevcut firmware kayıtları olarak saklamak.</li>
-    <li>Kullanıcı seçimine göre yeni firmware bildirimi oluşturmak.</li>
-    <li>Arka plan kontrolünü planlanan aralıklarla çalıştırmak.</li>
-    <li>Favori cihazları ve uygulama tercihlerini hatırlamak.</li>
-  </ul>
+Firmware sorgularında seçilen model kodu ve CSC, Samsung firmware servislerine gönderilir. Test firmware taraması sırasında model kodu, test build haberlerini aramak için kamuya açık teknoloji haber yayınlarının servislerine de gönderilebilir; bu isteklerde CSC, favoriler veya cihazdaki tarama geçmişi gönderilmez. İstekler Android uygulaması tarafından otomatik yapılabilir ve ilgili yayınlar IP adresi ile standart teknik istek verilerini alabilir.
 
-  <h2>4. Bildirimler ve arka plan işlemler</h2>
-  <p>Android 13 veya üzerindeki cihazlarda bildirim izni sistem tarafından ve kullanıcı isteğiyle alınır. Arka plan kontrolü WorkManager tarafından yapılır ve kullanıcı bu ayarı uygulama içinden kapatabilir.</p>
+Firmware sürüm bilgisini eşleştirmek için model kodu ve build bilgisi bir sürüm metadatası servisine gönderilebilir. Uygulama dağıtımında ek firmware backend'i etkinleştirilmişse, ilgili sorguda model kodu ve CSC bu backend'e iletilir. Harici firmware araştırması kullanıcı tarafından başlatıldığında seçilen kapsam; tek model araştırmasında ayrıca model kodu, varsa CSC ve cihazda bilinen mevcut resmi build, yapılandırılmış araştırma backend'ine gönderilir.
 
-  <h2>5. Üçüncü taraflar ve ağ servisleri</h2>
-  <p>Uygulama Samsung FOTA servislerine ve yapılandırılmış sürüm/test firmware sağlayıcılarına erişebilir. Bu servislerin kendi gizlilik politikaları ve verilerin sunucu tarafında tutulma süreleri ayrı olarak uygulanabilir. Uygulama reklam SDK'sı veya analytics/crash reporting SDK'sı kullanmaz.</p>
+Ağ servisleri IP adresi ve standart teknik HTTP başlıklarını işleyebilir. Uygulama bu ağ verilerinin üçüncü taraf sunuculardaki saklama süresini belirlemez.
 
-  <h2>6. Saklama ve silme</h2>
-  <p>Model, CSC, favori, tarama geçmişi ve ayarlar cihazınızda yerel olarak saklanır. Uygulama verilerini cihaz Ayarlar ekranından silerek veya uygulamayı kaldırarak yerel veriler kaldırılır.</p>
+3. Bilgi kullanımı
+Seçilen Samsung model ve CSC için firmware sorgulamak.
+Sonuçları cihazda tarama geçmişi ve mevcut firmware kayıtları olarak saklamak.
+Kullanıcı seçimine göre yeni firmware bildirimi oluşturmak.
+Arka plan kontrolünü planlanan aralıklarla çalıştırmak.
+Favori cihazları ve uygulama tercihlerini hatırlamak.
+Test firmware taraması sırasında kamuya açık teknoloji haber yayınlarındaki ilgili build haberlerini kontrol etmek.
+4. Bildirimler ve arka plan işlemler
+Android 13 veya üzerindeki cihazlarda bildirim izni sistem tarafından ve kullanıcı isteğiyle alınır. Arka plan kontrolü WorkManager tarafından yapılır ve kullanıcı bu ayarı uygulama içinden kapatabilir.
 
-  <h2>7. Çocukların gizliliği</h2>
-  <p>Uygulama kullanıcı hesapları veya çocuklara özel veri toplama amacıyla tasarlanmamıştır.</p>
+5. Üçüncü taraflar ve ağ servisleri
+Uygulama firmware sorguları için Samsung servislerine, sürüm eşlemesi için çevrim içi metadata servisine ve test taraması sırasında kamuya açık teknoloji haber yayınlarının servislerine erişebilir. Ek firmware veya araştırma backend'i yalnızca ilgili derlemede yapılandırılmışsa kullanılır. Bu hizmetler bağlantı verilerini ve kendilerine gönderilen sorgu alanlarını kendi gizlilik politikalarına göre işleyebilir. Uygulama reklam SDK'sı, analitik veya çökme raporlama SDK'sı kullanmaz.
 
-  <h2>8. Değişiklikler</h2>
-  <p>Bu politika güncelleme sırasında değiştirilebilir. Güncel sürüm bu sayfadaki yürürlük tarihi ile birlikte yayımlanır.</p>
+6. Harici firmware leak araştırması
+Kullanıcı harici firmware araştırmasını başlattığında uygulama, araştırma isteğini yapılandırılmış backend'e iletir. Tek model araştırmasında istek; model kodunu, seçilen CSC'yi ve cihazda biliniyorsa o model/CSC için mevcut resmi build'i içerebilir. Katalog araştırmasında kapsam bilgisi gönderilir. Backend, isteğe bağlı olarak herkese açık geliştirici tartışma ve kod barındırma hizmetlerinin arama API'sini kullanabilir; eşleşen herkese açık kayıtlar ve kaynak bağlantıları backend'de saklanıp uygulamaya döndürülür. Araştırma backend'i yapılandırılmamışsa bu özellik kullanılamaz. Backend'in saklama sınırları ve barındırma/log süreleri dağıtım yapılandırmasına bağlıdır; operatör bunları açıklamalı ve yönetmelidir.
 
-  <h2>9. İletişim</h2>
-  <p>Gizlilik ile ilgili sorular için: <a href="mailto:fluidgalaxylabs@gmail.com">fluidgalaxylabs@gmail.com</a></p>
-</body>
-</html>
+Bu araştırma isteği favorileri, yerel tarama geçmişini, hesap bilgilerini veya firmware hash'lerini içermez. Zamanlanmış katalog araştırması ancak backend tarafında etkinleştirilirse çalışır. Araştırma sonuçları harici bildirim niteliğindedir; Samsung FOTA tarafından doğrulanmış veya yüklenebilir firmware olduklarını göstermez. Backend ve üçüncü taraf arama servisleri IP adresi ve teknik istek verilerini kendi politikalarına göre işleyebilir.
+
+7. Saklama ve silme
+Model, CSC, favori, tarama geçmişi, firmware kayıtları ve ayarlar cihazınızda yerel olarak saklanır. Harici araştırma backend'i kullanılırsa, araştırma kayıtları backend dağıtımında saklanabilir; bu kayıtların silinmesi ve saklama süresi backend operatörünün sorumluluğundadır. Uygulama verilerini cihaz ayarlarından silerek veya uygulamayı kaldırarak cihazdaki yerel verileri kaldırabilirsiniz. Üçüncü taraf servislerdeki bağlantı kayıtlarının yönetimi ilgili sağlayıcıların politikalarına bağlıdır.
+
+8. Çocukların gizliliği
+Uygulama kullanıcı hesapları veya çocuklara özel veri toplama amacıyla tasarlanmamıştır.
+
+9. Değişiklikler
+Bu politika güncelleme sırasında değiştirilebilir. Güncel sürüm bu sayfadaki yürürlük tarihi ile birlikte yayımlanır.
+
+10. İletişim
+Gizlilik ile ilgili sorular için: fluidgalaxylabs@gmail.com
